@@ -4,17 +4,17 @@ exports.up = function (knex) {
     .createTable('meals', meals => {
       meals.increments();
       meals
-        .string('name', 80)
+        .string('name', 40)
         .notNullable()
         .unique();
       meals
         .integer('price').notNullable()
       meals
-        .text('notes').notNullable();
+        .text('notes', 80);
       meals
         .string('category').notNullable();
       meals
-        .boolean('is_available')
+        .boolean('is_available').defaultTo(true)
       meals
         .text('image');
       meals

@@ -10,13 +10,13 @@ exports.up = function (knex) {
                 .foreign('meal_id')
                 .references('meals.id');
             mealOptions
-                .string('name', 80)
+                .string('name', 40)
                 .notNullable()
                 .unique();
             mealOptions
                 .integer('price').notNullable()
             mealOptions
-                .boolean('is_available')
+                .boolean('is_available').defaultTo(false)
             mealOptions
                 .text('image');
             mealOptions
