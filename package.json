@@ -1,0 +1,14 @@
+{
+  "name": "delivery-app-db-layer",
+  "version": "1.0.0",
+  "description": "This servie handles migrations and database operations.",
+  "main": "knexfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "knex": "^2.4.2"
+  }
+}
