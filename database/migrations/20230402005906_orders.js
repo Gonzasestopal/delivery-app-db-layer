@@ -4,7 +4,7 @@ exports.up = function (knex) {
         .createTable('orders', orders => {
             orders.increments();
             orders
-                .string('status').notNullable();
+                .string('status').notNullable().defaultTo('active')
             orders
                 .integer('meal_id')
                 .unsigned()
