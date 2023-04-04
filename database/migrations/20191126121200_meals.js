@@ -18,7 +18,7 @@ exports.up = function (knex) {
       meals
         .text('image');
       meals
-        .timestamps(); // will create two columns: created_at, updated_at
+        .timestamps(true, true); // will create two columns: created_at, updated_at
     })
 };
 

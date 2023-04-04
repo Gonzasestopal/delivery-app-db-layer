@@ -20,7 +20,7 @@ exports.up = function (knex) {
                 .foreign('user_id')
                 .references('users.id');
             orders
-                .timestamps(); // will create two columns: created_at, updated_at
+                .timestamps(true, true); // will create two columns: created_at, updated_at
         })
 };
 

@@ -17,7 +17,7 @@ exports.up = function (knex) {
             users
                 .string('status', 20).notNullable().defaultTo('active')
             users
-                .timestamps(); // will create two columns: created_at, updated_at
+                .timestamps(true, true); // will create two columns: created_at, updated_at
         })
 };
 

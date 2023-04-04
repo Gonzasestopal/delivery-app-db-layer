@@ -20,7 +20,7 @@ exports.up = function (knex) {
             mealOptions
                 .text('image');
             mealOptions
-                .timestamps(); // will create two columns: created_at, updated_at
+                .timestamps(true, true); // will create two columns: created_at, updated_at
         })
 };
 
