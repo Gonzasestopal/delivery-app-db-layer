@@ -12,7 +12,11 @@ This servie handles migrations and database operations.
 
 ## Installation
 
-``npm install``
+- Run ``npm install``
+
+## Usage
+
+- Run `docker-compose up`
 
 ## Migrations
 
